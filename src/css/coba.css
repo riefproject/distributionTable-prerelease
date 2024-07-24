@@ -1,0 +1,148 @@
+body {
+    background: #1e1e2f;
+    color: #b0b0c3;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #25283d;
+    border-bottom: 1px solid #3b3e5b;
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #918aff !important;
+  }
+  
+  .custom-toggler-icon {
+    width: 30px;
+    height: 2px;
+    background-color: #918aff;
+    display: block;
+    position: relative;
+  }
+  
+  .custom-toggler-icon::before,
+  .custom-toggler-icon::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #918aff;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+  }
+  
+  .custom-toggler-icon::before {
+    top: -8px;
+  }
+  
+  .custom-toggler-icon::after {
+    top: 8px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-nav {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .nav-item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .deleteTable {
+    background: transparent;
+    border: 1px solid #6c63ff;
+    color: #6c63ff;
+  }
+  
+  table#distributionTable {
+    border-collapse: collapse;
+    background: linear-gradient(48deg, #282846 0%, #3c3c5c 100%);
+    color: #b0b0c3;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  table#distributionTable th {
+    border-top: 0.2px solid #b0b0c3;
+    white-space: nowrap;
+  }
+  table#distributionTable th,
+  table#distributionTable td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #404060;
+  }
+  
+  table#distributionTable thead {
+    background: rgba(108, 99, 255, 0.2);
+  }
+  
+  table#distributionTable tfoot {
+    color: #b0b0c3;
+    font-weight: bold;
+  }
+  
+  table#distributionTable tbody {
+    background: rgba(255, 255, 255, 0.03);
+    border-top: none;
+  }
+  
+  table#distributionTable tr:hover {
+    background: rgba(108, 99, 255, 0.1);
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:hover,
+  .navbar-toggler:after,
+  .navbar-toggler:active {
+    outline: none;
+  }
+  .navbar-toggler:focus{
+      drop
+  }
+  #distributionTable .form-control,
+  #distributionTable .form-control:active,
+  #distributionTable .form-control:focus {
+    text-align: center;
+    border: 1px solid #6c63ff;
+    color: #b0b0c3;
+    background-color: transparent;
+  }
+  
+  #distributionTable input::placeholder {
+    color: #7a7a90;
+  }
+  
+  #summaryTable td {
+    padding: 0 0.5em 0;
+  }
+  
+  table#summaryTable {
+    text-align: start;
+    margin-top: 20px;
+  }
+  
+  
+  
+
+   
