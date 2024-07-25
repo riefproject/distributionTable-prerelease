@@ -4,27 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
 });
 
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        
-        const table = document.getElementById('distributionTable');
-        const formElements = Array.from(table.querySelectorAll('input'));
-        const currentIndex = formElements.indexOf(document.activeElement);
-        
-        if (formElements.length > 0) {
-            const nextIndex = (currentIndex + 1) % formElements.length;
-            formElements[nextIndex].focus();
-            
-            // Jika fokus sudah pada input terakhir dan itu adalah baris terakhir
-            if (nextIndex === 0 && currentIndex === formElements.length - 1) {
-                addRow(); // Panggil addRow jika fokus sudah pada input terakhir
-            } else {
-                formElements[nextIndex].focus(); // Fokus ke input berikutnya
-            }
-        }
-    }
-});
+
 let sumF = 0;
 let sumFiCi = 0;
 let avgFirstValue = 0;
